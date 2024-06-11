@@ -1,0 +1,70 @@
+/* about.module.css */
+
+.container {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.card {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.cardCurvedBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #e0f7fa; /* Light cyan background color */
+  clip-path: ellipse(75% 50% at 50% 0); /* Creates a curve effect */
+  z-index: 1;
+}
+
+.cardMedia {
+  object-fit: cover;
+  height: 15rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1rem 1rem 1rem; /* Adjusting padding to avoid overlap with the curved background */
+  background: linear-gradient(to bottom left, transparent 50%, #e0f7fa 50%); /* Adding a gradient for the curve */
+  border-radius: 0 0 12px 12px; /* Adjusting border-radius to match the card */
+}
+
+.cardTitle {
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.cardSpecialization {
+  color: #004d40; /* Dark teal color */
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  color: #757575; /* Gray color */
+}
